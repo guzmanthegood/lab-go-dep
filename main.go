@@ -2,8 +2,11 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/travelgateX/go-jwt-tools/jwt"
 )
 
 func main() {
-	fmt.Println("hello dep world!")
+	c := jwt.ParserConfig{}
+	fmt.Println("hello dep world!", c.AdminGroup)
 }
